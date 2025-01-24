@@ -1,4 +1,4 @@
-# Jan - Local AI Assistant
+# Jan - Assistant IA local 
 
 ![Jan banner](./JanBanner.png)
 
@@ -20,28 +20,26 @@
 </p>
 
 <p align="center">
-⚠️ <b> Jan is currently in Development</b>: Expect breaking changes and bugs!
+⚠️ <b> Jan est actuellement en développement</b> : attendez-vous à des changements et à des bugs !
 </p>
 
 
-Jan is a ChatGPT-alternative that runs 100% offline on your device. Our goal is to make it easy for a layperson to download and run LLMs and use AI with **full control** and **privacy**.
+Jan est une alternative au ChatGPT qui fonctionne à 100 % hors ligne sur votre appareil. Notre objectif est de permettre à un profane de télécharger et d'exécuter des LLM et d'utiliser l'IA avec **un contrôle total** et **la confidentialité**.
 
-Jan is powered by [Cortex](https://github.com/janhq/cortex.cpp), our embeddable local AI engine that runs on any hardware.
-From PCs to multi-GPU clusters, Jan & Cortex supports universal architectures:
-
+Jan est alimenté par [Cortex](https://github.com/janhq/cortex.cpp), notre moteur d'IA locale intégrable qui fonctionne sur n'importe quel matériel.
+Des PC aux clusters multi-GPU, Jan & Cortex prend en charge des architectures universelles :
 - [x] NVIDIA GPUs (fast)
 - [x] Apple M-series (fast)
 - [x] Apple Intel
 - [x] Linux Debian
 - [x] Windows x64
 
-#### Features:
-- [Model Library](https://jan.ai/docs/models/manage-models#add-models) with popular LLMs like Llama, Gemma, Mistral, or Qwen 
-- Connect to [Remote AI APIs](https://jan.ai/docs/remote-models/openai) like Groq and OpenRouter
-- Local API Server with OpenAI-equivalent API
-- [Extensions](https://jan.ai/docs/extensions) for customizing Jan
-
-## Download
+#### Caractéristiques :
+- [Bibliothèque des modèles](https://jan.ai/docs/models/manage-models#add-models) avec des LLM populaires comme Llama, Gemma, Mistral ou Qwen
+- Se connecter aux  [Remote AI APIs](https://jan.ai/docs/remote-models/openai) comme Groq et OpenRouter
+- Serveur API local avec API équivalente à l'OpenAI
+- [Extensions](https://jan.ai/docs/extensions) pour personnaliser Jan
+## Télécharger
 
 <table>
   <tr style="text-align:center">
@@ -51,7 +49,7 @@ From PCs to multi-GPU clusters, Jan & Cortex supports universal architectures:
     <td colspan="2" style="text-align:center"><b>Linux</b></td>
   </tr>
   <tr style="text-align:center">
-    <td style="text-align:center"><b>Stable (Recommended)</b></td>
+    <td style="text-align:center"><b>Stable (Recommandé)</b></td>
     <td style="text-align:center">
       <a href='https://app.jan.ai/download/latest/win-x64'>
         <img src='https://github.com/janhq/jan/blob/dev/docs/static/img/windows.png' style="height:14px; width: 14px" />
@@ -105,7 +103,7 @@ From PCs to multi-GPU clusters, Jan & Cortex supports universal architectures:
     </td>
   </tr>
   <tr style="text-align:center">
-    <td style="text-align:center"><b>Nightly Build (Experimental)</b></td>
+    <td style="text-align:center"><b>Nightly Build (Expérimental)</b></td>
     <td style="text-align:center">
       <a href='https://app.jan.ai/download/nightly/win-x64'>
         <img src='https://github.com/janhq/jan/blob/dev/docs/static/img/windows.png' style="height:14px; width: 14px" />
@@ -133,7 +131,7 @@ From PCs to multi-GPU clusters, Jan & Cortex supports universal architectures:
   </tr>
 </table>
 
-Download the latest version of Jan at https://jan.ai/ or visit the [GitHub Releases](https://github.com/janhq/jan/releases) to download any previous release.
+Téléchargez la dernière version de Jan à l'adresse suivante https://jan.ai/ ou visitez le site [GitHub Releases](https://github.com/janhq/jan/releases) pour télécharger toute version antérieure.
 
 ## Demo
 
@@ -141,7 +139,7 @@ https://github.com/user-attachments/assets/c3592fa2-c504-4d9d-a885-7e00122a50f3
 
 *Real-time Video: Jan v0.5.7 on a Mac M2, 16GB Sonoma 14.2*
 
-## Quicklinks
+## Liens rapides
 
 ### Jan
 
@@ -152,50 +150,51 @@ https://github.com/user-attachments/assets/c3592fa2-c504-4d9d-a885-7e00122a50f3
 - [Jan Blog](https://jan.ai/blog)
 
 ### Cortex.cpp
-Jan is powered by **Cortex.cpp**. It is a C++ command-line interface (CLI) designed as an alternative to [Ollama](https://ollama.com/). By default, it runs on the llama.cpp engine but also supports other engines, including ONNX and TensorRT-LLM, making it a multi-engine platform.
+Jan est alimenté par **Cortex.cpp**. Il s'agit d'une interface de ligne de commande (CLI) en C++ conçue comme une alternative à [Ollama](https://ollama.com/). Par défaut, elle fonctionne sur le moteur llama.cpp mais supporte également d'autres moteurs, dont ONNX et TensorRT-LLM, ce qui en fait une plateforme multi-moteurs.
 
 
 - [Cortex Website](https://cortex.so/)
 - [Cortex GitHub](https://github.com/janhq/cortex.cpp)
 - [Documentation](https://cortex.so/docs/)
 - [Models Library](https://cortex.so/models)
-- API Reference: *Under development*
+- Référence API : *En cours de développement*
   
-## Requirements for running Jan
+## Conditions requises pour l'exécution de Jan
 
-- **MacOS**: 13 or higher
+- **MacOS**: 13 ou plus
 - **Windows**:
-  - Windows 10 or higher
-  - To enable GPU support:
-    - Nvidia GPU with CUDA Toolkit 11.7 or higher
-    - Nvidia driver 470.63.01 or higher
-- **Linux**:
-  - glibc 2.27 or higher (check with `ldd --version`)
-  - gcc 11, g++ 11, cpp 11 or higher, refer to this [link](https://jan.ai/guides/troubleshooting/gpu-not-used/#specific-requirements-for-linux) for more information
-  - To enable GPU support:
-    - Nvidia GPU with CUDA Toolkit 11.7 or higher
-    - Nvidia driver 470.63.01 or higher
+  - Windows 10 ou supérieur
+  - Pour activer la prise en charge du GPU :
+  - GPU Nvidia avec CUDA Toolkit 11.7 ou supérieur
+  - Pilote Nvidia 470.63.01 ou supérieur
+  - **Linux** :
+  -  glibc 2.27 ou supérieur (vérifiez avec `ldd --version`)
+  -  gcc 11, g++ 11, cpp 11 ou supérieur, référez-vous à ce [lien](https://jan.ai/guides/troubleshooting/gpu-not-used/#specific-requirements-for-linux) pour plus d'informations
+  -  Pour activer le support du GPU :
+  -  GPU Nvidia avec CUDA Toolkit 11.7 ou supérieur
+  -  Pilote Nvidia 470.63.01 ou supérieur
 
-## Troubleshooting
 
-As Jan is in development mode, you might get stuck on a some common issues:
+
+
+## Dépannage
+
+Jan étant en mode développement, il se peut que vous soyez confronté à des problèmes courants :
 - [Troubleshooting a broken build](https://jan.ai/docs/troubleshooting#broken-build)
 - [Troubleshooting NVIDIA GPU](https://jan.ai/docs/troubleshooting#troubleshooting-nvidia-gpu)
 - [Troubleshooting Something's Amiss](https://jan.ai/docs/troubleshooting#somethings-amiss)
 
 
-If you can't find what you need in our troubleshooting guide, feel free reach out to us for extra help:
-1. Copy your [error logs & device specifications](https://jan.ai/docs/troubleshooting#how-to-get-error-logs).
-2. Go to our [Discord](https://discord.com/invite/FTk2MvZwJH) & send it to **#🆘|get-help** channel for further support.
-
-*Check the logs to ensure the information is what you intend to send. Note that we retain your logs for only 24 hours, so report any issues promptly.*
+Si vous ne trouvez pas ce dont vous avez besoin dans notre guide de dépannage, n'hésitez pas à nous contacter pour obtenir de l'aide supplémentaire :
+1. Copiez vos [journaux d'erreurs et spécifications de l'appareil](https://jan.ai/docs/troubleshooting#how-to-get-error-logs).
+2. Allez sur notre [Discord](https://discord.com/invite/FTk2MvZwJH) et envoyez-le dans le canal **#🆘|get-help** pour obtenir de l'aide.
+*Vérifiez les journaux pour vous assurer que les informations correspondent à ce que vous avez l'intention d'envoyer. Notez que nous ne conservons vos journaux que pendant 24 heures, alors signalez-nous rapidement tout problème.*
   
 
-## Contributing
+## Contribuer
 
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file
-
-### Pre-requisites
+Les contributions sont les bienvenues ! Veuillez lire le fichier [CONTRIBUTING.md](CONTRIBUTING.md)
+### Pré-requis
 
 - node >= 20.0.0
 - yarn >= 1.22.0
@@ -203,7 +202,7 @@ Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) fi
 
 ### Instructions
 
-1. **Clone the repository and prepare:**
+1. **Cloner le référentiel et se préparer :**
 
    ```bash
    git clone https://github.com/janhq/jan
@@ -211,17 +210,16 @@ Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) fi
    git checkout -b DESIRED_BRANCH
    ```
 
-2. **Run development and use Jan Desktop**
+2. **Lancer le développement et utiliser Jan Desktop**
 
    ```bash
    make dev
    ```
 
-This will start the development server and open the desktop app.
+Cette opération permet de démarrer le serveur de développement et d'ouvrir l'application de bureau.
 
 
-
-### For production build
+### Pour la production
 
 ```bash
 # Do steps 1 and 2 in the previous section
@@ -229,11 +227,11 @@ This will start the development server and open the desktop app.
 make build
 ```
 
-This will build the app MacOS m1/m2 for production (with code signing already done) and put the result in `dist` folder.
+Ceci construira l'application MacOS m1/m2 pour la production (avec la signature du code déjà effectuée) et placera le résultat dans le dossier `dist`.
 
-## Acknowledgements
+## Remerciements
 
-Jan builds on top of other open-source projects:
+Jan s'appuie sur d'autres projets open-source :
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [LangChain](https://github.com/langchain-ai)
@@ -242,20 +240,20 @@ Jan builds on top of other open-source projects:
 
 ## Contact
 
-- Bugs & requests: file a GitHub ticket
-- For discussion: join our Discord [here](https://discord.gg/FTk2MvZwJH)
-- For business inquiries: email hello@jan.ai 
-- For jobs: please email hr@jan.ai
+- Bugs et demandes : déposer un ticket GitHub
+- Pour les discussions : rejoignez notre Discord [ici](https://discord.gg/FTk2MvZwJH)
+- Pour les demandes de renseignements commerciaux : hello@jan.ai 
+- Pour les offres d'emploi : veuillez envoyer un courriel à hr@jan.ai
 
-## Trust & Safety
+## Confiance et sécurité
 
-Beware of scams!
+Attention aux escroqueries !
 
-- We will never request your personal information.
-- Our product is completely free; no paid version exists.
-- We do not have a token or ICO.
-- We are a [bootstrapped company](https://en.wikipedia.org/wiki/Bootstrapping), and don't have any external investors (*yet*). We're open to exploring opportunities with strategic partners want to tackle [our mission](https://jan.ai/about#mission) together.
+- Nous ne vous demanderons jamais d'informations personnelles.
+- Notre produit est entièrement gratuit ; il n'existe pas de version payante.
+- Nous n'avons pas de jeton ou d'ICO.
+- Nous sommes une [quick-start company](https://en.wikipedia.org/wiki/Bootstrapping), et n'ont pas d'investisseurs extérieurs (*pour l'instant*). Nous sommes ouverts à l'exploration d'opportunités avec des partenaires stratégiques désireux de s'attaquer aux problèmes suivants [notre mission](https://jan.ai/about#mission) ensemble.
 
-## License
+## Licence
 
-Jan is free and open source, under the **AGPLv3** license.
+Jan est libre et gratuit, sous la licence **AGPLv3**.
